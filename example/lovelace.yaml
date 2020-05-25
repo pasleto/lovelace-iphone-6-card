@@ -1,0 +1,2 @@
+  - type: custom:iphone-6-card
+    entity: sensor.tomas_iphone_6
