@@ -157,23 +157,23 @@
                 </div>
 
                 <div class="grid-container">
-                  <div class="icon"><img class="device-type image-invert" src="/local/my-cards/iphone-6-card/device_type.png" alt="Type" /></div>
+                  <div class="icon"><img class="device-type image-invert" src="/hacsfiles/lovelace-iphone-6-card/device_type.png" alt="Type" /></div>
                   <div class="text"><span>${this.getValueState('device_type')}</span></div>
                 </div>
                 ${this.state.showSim ? html`
                 <div class="grid-container">
-                  <div class="icon"><img class="sim image-invert" src="/local/my-cards/iphone-6-card/sim_1.png" alt="Sim1" /></div>
+                  <div class="icon"><img class="sim image-invert" src="/hacsfiles/lovelace-iphone-6-card/sim_1.png" alt="Sim1" /></div>
                   <div class="text"><span>${this.getValueState('sim_1')}</span></div>
                 </div>` : null}
 
                 ${this.state.showWifi ? html`
                 <div class="grid-container">
-                  <div class="icon"><img class="wifi image-invert" src="/local/my-cards/iphone-6-card/wifi.png" alt="WiFi" /></div>
+                  <div class="icon"><img class="wifi image-invert" src="/hacsfiles/lovelace-iphone-6-card/wifi.png" alt="WiFi" /></div>
                   <div class="text"><span>${this.getValueState('wifi_on')}</span></div>
                 </div>` : null}
 
                 <div class="battery-box" >
-                  <img class="battery image-invert" src="/local/my-cards/iphone-6-card/battery.png" alt="Bat" />
+                  <img class="battery image-invert" src="/hacsfiles/lovelace-iphone-6-card/battery.png" alt="Bat" />
                   <div class="battery-fill-box">
                     <div class="battery-fill" style="width: ${this.getBatteryPercentage()}%; background-color: ${this.getBatteryColor()};"></div>
                     <div class="battery-fill-text">${this.getValueState('battery')}%</div>
@@ -182,7 +182,7 @@
                 
                 ${this.state.showPlug ? html`
                 <div class="plug-box" style="${this.getValueState('battery_charging') !== 'true' ? 'display: none;' : ''}">
-                  <img class="plug image-invert" src="/local/my-cards/iphone-xs-card/plug.png" alt="Plug" />
+                  <img class="plug image-invert" src="/hacsfiles/lovelace-iphone-6-card/plug.png" alt="Plug" />
                 </div>
                 ` : null}
             </div>
@@ -297,8 +297,8 @@
           };
 
           this.style = {
-            // background: `background-image: url('/hacsfiles/iphone-6-card/iphone_6.png')`
-            background: `background-image: url('/local/my-cards/iphone-6-card/iphone_6.png')`
+            background: `background-image: url('/hacsfiles/lovelace-iphone-6-card/iphone_6.png')`
+            //background: `background-image: url('/local/my-cards/iphone-6-card/iphone_6.png')`
           };
 
           this._config = config;
