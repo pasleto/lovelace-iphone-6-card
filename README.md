@@ -2,7 +2,7 @@
     Lovelace Apple iPhone 6 Card
 </h1>
 
-HA Lovelace Card for Apple iPhone 6 / 6s / 7 / 8 using sensors data
+HA Lovelace Card for Apple iPhone 6 / 6s / 7 / 8 / SE 2020 using sensors data
 
 
 <p align="center">
