@@ -204,7 +204,13 @@ import { LitElement, html, css } from "https://unpkg.com/lit-element@2.0.1/lit-e
             if(value === this._hass.localize('state.default.unavailable') || value === 'Unavailable'){
               return `Unavailable`;
             } else if(value === 'true'){
-              return `ON`;
+              if(this.getValueState('ssid')){ // if exists
+                if(this.getValueState('ssid') === this._hass.localize('state.default.unavailable') || value === 'Unavailable' || this.getValueState('ssid') === 'Not Connected'){ // if unavailable or not connected
+                  return `ON`;
+                } else {
+                  return this.getValueState('ssid');
+                }
+              }
             } else {
               return `OFF`;
             }
@@ -277,7 +283,7 @@ import { LitElement, html, css } from "https://unpkg.com/lit-element@2.0.1/lit-e
               battery_charging: 'battery_charging',
               entity_picture: 'entity_picture',
               gps_accuracy: 'gps_accuracy',
-              bssid: 'bssid',
+              ssid: 'ssid',
               ip: 'ip',
               sim_1: 'sim_1',
               device_type: 'device_type'
