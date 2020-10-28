@@ -8,6 +8,7 @@ HA Lovelace Card for Apple iPhone 6 / 6s / 7 / 8 / SE 2020 using sensors data
 <p align="center">
     <img src="https://raw.githubusercontent.com/pasleto/lovelace-iphone-6-card/master/example/card_example.png" alt="Example"/>
 </p>
+This was first edition of this card, now looks more better :)
 
 ## Setup
 
